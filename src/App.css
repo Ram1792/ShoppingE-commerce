@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+*{
+   
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: aliceblue;
+}
+.navbarSection{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+    background-color:rgb(34, 28, 47);
+    height: 58px;
+    width: 100%;
+   
+}
+.logo img{
+    width:60px;
+    height: 63px;
+}
+.subnav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: rgb(145, 211, 211);
+    height:45px;
+    align-items: center;
+    /* padding: 5px; */
+    width: 100%;
+}
+.prosection{
+    display:flex;
+    background-color:white;
+    padding: 28px;
+   
+}
+.img-box{
+    width: 60%;
+    margin: 10px;
+    box-shadow: 0 0 4px rgb(34, 28, 47);
+    border-radius: 5px;
+}
+.actualimg{
+    width: 100%;
+    
+}
+.data-info{
+    margin: 20px;
+    color:darkslategray;
+    list-style-type: none;
+}
+.pagesection{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    margin-left: 400px;
+    margin-top: 110px;
+    background-color: aliceblue;
+}
+.pageimgbox{
+   width: 80%;
+   background-color:white;
+   margin: 30px;
+   padding: 30px 30px;
+   height: 20rem;
+   box-shadow: 0 0 2px rgb(145, 211, 211);
+   border-radius: 10px;
+}
+.pageimgbox img{
+    width: 100%;
+    
+}
+.searchbar{
+     
+} 
+.searchbar input{
+    padding: 10px 100px;
+    border-radius: 10px;
+    outline: none;
+    
+}
+#searchbtn{
+    padding: 10px 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -40px;
+    border: none;
+    box-shadow: 0px 0px 1px bisque;
+    background-color:darkgoldenrod;
+}
+.user{
+    display:flex;
+    font-size: large;
+    line-height: 2rem;
+    color: white;
+    gap:20px;
+    padding-right: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content li{
+     
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: darkslategray;
+     
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links{
+   text-decoration: none;
+   color:whitesmoke ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.links:hover{
+     cursor: pointer;
+     background-color:white;
+     /* padding: 13px 5px; */
+     height: 100%;
+     align-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.login-page{
+    
+     padding: 90px 60px;
+     width:50%;
+     background-color:#555;  
+     margin: 5% 25%;
+     align-items: center;
+     align-content: center;
 }
+.login-input{
+      width: 100%;
+      text-align: center;
+      background-color:rgb(245, 245, 245);
+      padding: 60px 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.login-input input{
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1px black;
+    /* margin-left: 40%; */
+    margin: 10px;
+}
+.login-head{
+    margin-left: 42%;
+    padding: 20px;
+   
+}
+.loginbtn{
+    padding: 7px 40px;
+    background-color:darkslateblue;
+    /* margin-left: 40%; */
+    color: white;
+    position: relative;
+    bottom: 40px;
+}
+.fullpage{
+      display: flex;
+}
+.pro-select{
+    position: fixed;
+    top: 7.7rem;
+    padding: 28px 25px;
+    border: 0px solid black;
+    height: 100vh;
+    background-color: rgb(205, 197, 197);
+    width: 200px;
+   
+   
+   
+}
+.pro-select input{
+     margin: 10px;
+}
+.ind-full-nav{
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+.hhh{
+    margin-top: 180px;
+}
+.product-details{
+    display:inline-flex;
+    justify-content: center;
+     padding: 20px 10px;
+     color: black;
+}
+.login-btn-main{
+    display: flex;
+    margin-left: 30%;
+    gap: 10px;
 }
